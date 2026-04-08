@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CFG Simplifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>CFG Simplifier</h2>
+
+  <textarea id="grammarInput">
+S -> AB | a
+A -> aA | ε
+B -> b
+  </textarea>
+
+  <br>
+
+  <button onclick="runStep1()">Remove Useless Symbols</button>
+  <button onclick="runStep2()">Remove Null Productions</button>
+  <button onclick="runStep3()">Remove Unit Productions</button>
+
+  <h3>Output</h3>
+  <pre id="output"></pre>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
